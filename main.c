@@ -71,14 +71,14 @@ int main() {
         printf("Digite o valor %d: ", i + 1);
         scanf("%d", valor);
         inserirNaPilha(pilha, valor);
-        printf("Inserido na pilha: %d\n", *valor);
+        printf("Inserido: %d\n", *valor);
     }
 
     printf("\nRemovendo valores da pilha:\n");
     for (int i = 0; i < quantidade; i++) {
         int *valor = (int *) removerDaPilha(pilha);
         if (valor != NULL) {
-            printf("Removido da pilha: %d\n", *valor);
+            printf("Removido: %d\n", *valor);
             free(valor);
         }
     }
